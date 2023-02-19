@@ -5,12 +5,12 @@
 class Probe < Formula
   desc "YAML + JQ end-to-end API testing tool."
   homepage "https://github.com/abhimanyu003/probe"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
-    url "https://github.com/abhimanyu003/probe/releases/download/v0.0.1/probe_0.0.1_darwin_all.tar.gz"
-    sha256 "4eef739ba1ed2166a91ee88133681dea6bf4c8e99434e2e80a10eff38e47cb12"
+    url "https://github.com/abhimanyu003/probe/releases/download/v0.0.2/probe_0.0.2_darwin_all.tar.gz"
+    sha256 "57d1624e443afbb7b660df45dbde6d98f26b33ad4a4391a1343695f9128a1021"
 
     def install
       bin.install "probe"
@@ -19,16 +19,16 @@ class Probe < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/probe/releases/download/v0.0.1/probe_0.0.1_linux_amd64.tar.gz"
-      sha256 "b78256d1636dd06d0d1b64475d7eecb658a5fdf72fd6f7ebbf1e85f703d55fd0"
+      url "https://github.com/abhimanyu003/probe/releases/download/v0.0.2/probe_0.0.2_linux_amd64.tar.gz"
+      sha256 "84c2e012958b7e8d273db8f3f5dc59c2442d80ebda1044914b53a62ee80b7302"
 
       def install
         bin.install "probe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abhimanyu003/probe/releases/download/v0.0.1/probe_0.0.1_linux_arm64.tar.gz"
-      sha256 "83be588ed030aa9e69da3263c7706205a60d0c634dd0ddffab34d87a112c5059"
+      url "https://github.com/abhimanyu003/probe/releases/download/v0.0.2/probe_0.0.2_linux_arm64.tar.gz"
+      sha256 "60395bcc3517722e9899f94170f3cc6cade8e37410179a97c4e49edfa2d24bdd"
 
       def install
         bin.install "probe"
