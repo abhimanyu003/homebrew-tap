@@ -10,7 +10,7 @@ class Probe < Formula
 
   on_macos do
     url "https://github.com/abhimanyu003/probe/releases/download/v0.0.1/probe_0.0.1_darwin_all.tar.gz"
-    sha256 "706c4e0a9f41a6b30280d347fc3c81376507c45e47ad0d5a85e42534319fe0ec"
+    sha256 "4eef739ba1ed2166a91ee88133681dea6bf4c8e99434e2e80a10eff38e47cb12"
 
     def install
       bin.install "probe"
@@ -20,7 +20,7 @@ class Probe < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/abhimanyu003/probe/releases/download/v0.0.1/probe_0.0.1_linux_amd64.tar.gz"
-      sha256 "ec00a2b35ecb18bdfd5cfe234cb4e68239e01b3aaeef05449370087e238b666c"
+      sha256 "b78256d1636dd06d0d1b64475d7eecb658a5fdf72fd6f7ebbf1e85f703d55fd0"
 
       def install
         bin.install "probe"
@@ -28,7 +28,7 @@ class Probe < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/abhimanyu003/probe/releases/download/v0.0.1/probe_0.0.1_linux_arm64.tar.gz"
-      sha256 "1f5b60fbb4721062fba05c286f40240e6aa1a0bbcd208f9c73eaf26177acea79"
+      sha256 "83be588ed030aa9e69da3263c7706205a60d0c634dd0ddffab34d87a112c5059"
 
       def install
         bin.install "probe"
