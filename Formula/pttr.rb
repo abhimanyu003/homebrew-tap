@@ -5,12 +5,12 @@
 class Pttr < Formula
   desc "A cross-platform terminal UI application for viewing and managing open ports - process on your system."
   homepage "https://github.com/abhimanyu003/pttr"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
-    url "https://github.com/abhimanyu003/pttr/releases/download/v0.0.1/pttr_Darwin_all.tar.gz"
-    sha256 "a30afe816675f54340ca34981ff14979331d1ab16038a92744e1c30be203952e"
+    url "https://github.com/abhimanyu003/pttr/releases/download/v0.0.2/pttr_Darwin_all.tar.gz"
+    sha256 "5846a715ae456ee4ca251e4a3555d3705f9cd32fc2c3964bee5c2273ae5125ad"
 
     def install
       bin.install "pttr"
@@ -19,15 +19,15 @@ class Pttr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abhimanyu003/pttr/releases/download/v0.0.1/pttr_Linux_x86_64.tar.gz"
-      sha256 "e9b41a83f0caae832527402534a2ce13cdecf8b4e20b810427d1a56dd184cbf3"
+      url "https://github.com/abhimanyu003/pttr/releases/download/v0.0.2/pttr_Linux_x86_64.tar.gz"
+      sha256 "aaf191fecf85a7b5cfe932793006d5a1b0da66a5e509b08b369ce2101f6c4a55"
       def install
         bin.install "pttr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abhimanyu003/pttr/releases/download/v0.0.1/pttr_Linux_arm64.tar.gz"
-      sha256 "be368402e617c21f790df4385e4aa89b94d81488506efa9c5a1bd1e743ae8b7e"
+      url "https://github.com/abhimanyu003/pttr/releases/download/v0.0.2/pttr_Linux_arm64.tar.gz"
+      sha256 "cd2a283dad0d3235845a931f04bc49863b79da9779218a97f4d06240fa0f2a90"
       def install
         bin.install "pttr"
       end
