@@ -10,7 +10,7 @@ class Pttr < Formula
 
   on_macos do
     url "https://github.com/abhimanyu003/pttr/releases/download/v0.0.1/pttr_Darwin_all.tar.gz"
-    sha256 "617acb562b99a870f4cb4c3a42c65f0fd9757e11a21cf754eb0fecc42d38a088"
+    sha256 "a30afe816675f54340ca34981ff14979331d1ab16038a92744e1c30be203952e"
 
     def install
       bin.install "pttr"
@@ -20,14 +20,14 @@ class Pttr < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/abhimanyu003/pttr/releases/download/v0.0.1/pttr_Linux_x86_64.tar.gz"
-      sha256 "295355eb012597d9c47d527f595a313c39df07a5121b4dc0c6cd245152d17965"
+      sha256 "e9b41a83f0caae832527402534a2ce13cdecf8b4e20b810427d1a56dd184cbf3"
       def install
         bin.install "pttr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/abhimanyu003/pttr/releases/download/v0.0.1/pttr_Linux_arm64.tar.gz"
-      sha256 "7785d524982e954e8ae4a96ff03ab3b62fdf65fec403d200d3e464aa79e815fb"
+      sha256 "be368402e617c21f790df4385e4aa89b94d81488506efa9c5a1bd1e743ae8b7e"
       def install
         bin.install "pttr"
       end
